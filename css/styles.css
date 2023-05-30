@@ -770,6 +770,9 @@ padding-bottom: 8px;
 background-color: #2E2F42;
 color: #FFFFFF;
 }
+.footer-form-field-wrapper{
+  margin-right: 24px;
+}
 .footer-form-input:focus{
   outline: none;
   border: 1px solid var(--logo-main-button-color);
