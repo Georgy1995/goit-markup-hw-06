@@ -458,71 +458,89 @@
         </button>
         <p class="form-text">Leave your contacts and we will call you back</p>
         <form class="contact-form">
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-input-title">Name</span>
-            <span class="contact-form-input-span"
-              ><input
-                class="contact-form-input"
-                type="text"
-                name="user_name"
-                required
-                pattern="[а-яА-Яa-zA-zіІїЇєЄґҐ]+]"
-              />
-              <svg class="contact-form-input-icon" width="12" height="12">
+          <div class="contact-form-container">
+            <label class="contact-form-field-wrapper" for="user-name">
+              Name
+              <div class="input-icon-container">
+                <input
+                  class="contact-form-input"
+                  type="text"
+                  name="user-name"
+                  required
+                  id="user-name"
+                  pattern="[а-яА-Яa-zA-zіІїЇєЄґҐ]+]"
+                />
+              <svg class="contact-form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user-name"></use>
               </svg>
-            </span>
+            </div>
+            </label>
+          </div>
+          <div class="contact-form-container">
+          <label class="contact-form-field-wrapper" for="user-tel">
+            Phone
+            <div class="input-icon-container">
+            <input
+              class="contact-form-input"
+              type="tel"
+              name="user-tel"
+              required
+              id="user-tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+            />
+            <svg class="contact-form-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-user-phone"></use>
+            </svg>
+          </div>
           </label>
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-input-title">Phone</span>
-            <span class="contact-form-input-span">
-              <input
-                class="contact-form-input"
-                type="tel"
-                name="user_tel"
-                required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
-              />
-              <svg class="contact-form-input-icon" width="13" height="13">
-                <use href="./images/icons.svg#icon-user-phone"></use>
-              </svg>
-            </span>
+        </div>
+        <div class="contact-form-container">
+          <label class="contact-form-field-wrapper" for="user-email">
+            Email
+            <div class="input-icon-container">
+            <input
+              class="contact-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+              pattern="[а-яА-Яa-zA-zіІїЇєЄґҐ]+]"
+            />
+            <svg class="contact-form-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-user-email"></use>
+            </svg>
+          </div>
           </label>
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-input-title">Email</span>
-            <span class="contact-form-input-span">
-              <input
-                class="contact-form-input"
-                type="email"
-                name="user_email"
-                required
-                pattern="[а-яА-Яa-zA-zіІїЇєЄґҐ]+]"
-              />
-              <svg class="contact-form-input-icon" width="15" height="12">
-                <use href="./images/icons.svg#icon-user-email"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-input-title">Comment</span>
+        </div>
+        <div class="contact-form-textarea-container">
+          <label class="contact-form-field-wrapper" for="user-comment">
+            Comment
             <textarea
               class="contact-form-textarea"
-              name="user_message"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </label>
+        </div>
+        <div class="contact-form-checkboxx-container"></div>
           <label class="contact-form-checkbox">
             <input
-              class="contact-form-checkbox"
+              class="contact-form-checkbox visually-hidden"
               type="checkbox"
-              name="user_policy"
+              id="user-privacy"
+              name="user-privacy"
+              value="true" 
               required
+              visually-hidden
             />
-            <span class="contact-form-checkbox-text"
-              >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
-            </span>
+            <label class="contact-form-checkbox-text" for="user-privacy"
+              ><span class="contact-form-checkbox-span"><svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg></span> I accept the terms and conditions of the
+              <a class="checkbox-link" href="">Privacy Policy</a>
+            </label>
           </label>
           <label class="contact-form-checkbox-wrapper">
             <button class="contact-form-btn order-btn" type="submit">
