@@ -39,6 +39,9 @@ img {
   display: block;
 }
 
+body{
+  font-family: var(--main-font-family);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -65,7 +68,6 @@ img {
 
 }
 .menu-link {
-  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -116,7 +118,6 @@ bottom: -1px;
   margin-left: auto;
 }
 .contacts {
-  font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -130,7 +131,6 @@ bottom: -1px;
 }
 
 .page-title {
-  font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -145,7 +145,6 @@ bottom: -1px;
 }
 
 .subtitle {
-  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -155,7 +154,6 @@ bottom: -1px;
   color: var(--main-color);
 }
 .description {
-  font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -164,7 +162,6 @@ bottom: -1px;
   color: var(--body-color);
 }
 .section-title {
-  font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -175,7 +172,6 @@ bottom: -1px;
   color: var(--main-color);
 }
 .center-subtitle {
-  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -185,7 +181,6 @@ bottom: -1px;
   color: var(--main-color);
 }
 .center-description {
-  font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -274,7 +269,6 @@ body {
   background-color: var(--secondary-color)
 }
 .tittle-link {
-  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -284,7 +278,6 @@ body {
   color: var(--main-color);
 }
 .paragraph-link {
-  font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -324,7 +317,6 @@ border-radius: 4px;
 
 .overlay{
   position: absolute;
-font-family: var(--main-font-family);
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
@@ -398,7 +390,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 }
 
 .form-text{
-  font-family: var(--main-font-family);
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
@@ -412,6 +403,7 @@ color: #2E2F42;
   margin-bottom: 8px;
 }
 .contact-form-textarea-container{
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -459,6 +451,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   left: 16px;
   top: 50%;
+  fill: #2E2F42;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -491,7 +484,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
 .contact-form-checkbox-text{
-font-family: var(--main-font-family);
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -509,6 +501,7 @@ color: #8E8F99;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-text .contact-form-checkbox-span {
 background-color: var(--secondary-color);
@@ -607,7 +600,6 @@ transform: translateY(0%);
 }
 
 .fourth-section-title {
-  font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -709,7 +701,6 @@ transform: translateY(0%);
 }
 
 .fifth-section-title{
-  font-family: var(--main-font-family);
 font-weight: 700;
 font-size: 36px;
 line-height: 40px;
@@ -764,7 +755,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
   }
 
 .text-footer {
-  font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -782,7 +772,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
   margin-right: 120px;
 }
 .social-media-text-footer{
-  font-family: var(--main-font-family);
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
@@ -842,7 +831,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   .footer-form-btn:hover{
     color: var(--btn-hover-focus-title-color);
-    background-color: #404bbf;
+    background-color: var(--secondary-color);
+  }
+  .footer-form-btn:focus{
+    color: var(--btn-hover-focus-title-color);
+    background-color: var(--secondary-color);
   }
   .footer-form-icon{
     margin-left: 16px;
